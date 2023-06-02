@@ -103,7 +103,6 @@ points:
       $extends: points.zones.matrix.key
       width: thumb_main_unit * capx
       bind: [edgey+10, thumb_main_unit * capx / 2 + edge_cut_padding, edgey, thumb_main_unit * capx / 2 + edge_cut_padding]
-
     anchor:
       - ref: thumb_2nd
         affect: y
@@ -111,7 +110,6 @@ points:
         - matrix_index_bottom
         - matrix_inner_bottom
         affect: x
-
 
   # Components
   # ==========
@@ -151,9 +149,6 @@ outlines:
         - /thumb_.*/
       size: [capx, capy]
       bound: false
-
-
-
   _mount_tab:
     - what: circle
       radius: mount_tab_dia / 2
@@ -164,7 +159,6 @@ outlines:
     - what: circle
       radius: mount_hole_dia / 2
       operation: stack
-  
   _mount_tab_internal:
     - what: circle
       radius: (mount_tab_dia + 1)/2
@@ -172,7 +166,6 @@ outlines:
       size: [mount_tab_dia + 1, mount_tab_dia + 1]
       adjust.shift: [0, -(mount_tab_dia + 1 )/ 2]
     - -_mount_tab
-
   _edge_cut:
     - what: rectangle
       where:
@@ -182,7 +175,10 @@ outlines:
       where: /thumb/
       size: [1, 1]
       bound: true
-
+    - what: rectangle
+      where: /matrix_ring_bottom/
+      size: [edgex * 2, edgey * 2]
+      adjust.shift: [0, -kx * 0.25]
   edge_cut:
     - name: _edge_cut
       fillet: 2
@@ -192,8 +188,11 @@ outlines:
     - name: _mount_tab_internal
       where: /mount_point_br/
       operation: stack
-      adjust.shift: [0, edgey + mount_tab_dia / 2]
-  
+      adjust.shift: [0, edgey + mount_tab_dia]
+  preview:
+    - edge_cut
+    - ^_keycaps
+
 
 pcbs.pas_chiffre:
   outlines.main:
@@ -208,3 +207,4 @@ pcbs.pas_chiffre:
         to: "{{name}}"
         reverse: true
         keycaps: true
+
