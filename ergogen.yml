@@ -39,13 +39,19 @@ presets:
 
 units:
   $extends: presets.mx_spaced
-  edgex: capx/2 + edge_cut_padding
+  edgex: capx/2 + edge_cut_padding  #distance from middle of the switch to pcb edge
   edgey: capy/2 + edge_cut_padding
 
   # Defaults/Constants
   # ====================
   $default_height: 0  # Points invisible by default unless height/width explicitly set
   $default_width: 0
+
+  # mounting tabs
+  # ====================
+  mount_hole_dia: 3
+  mount_tab_dia: 5   # diameter of the tab around the hole
+
 
 points:
   # Keys/Switches
@@ -107,37 +113,28 @@ points:
         affect: x
 
 
-  # Outline Extents
-  # ===============
-  zones.outline_top_left:
-    anchor:
-    - ref: matrix_middle_top
-      shift: [0.5kx, 0.5ky]
-      affect: y
-    - ref: matrix_pinky_top
-      affect: x
-      shift: [-0.5kx, 0.5ky]
-  zones.outline_top_right:
-    anchor:
-    - ref: outline_top_left
-    - ref: matrix_inner_top
-      affect: x
-      shift: [0.5kx, -0.5ky]
-  zones.outline_bottom_left:
-    anchor:
-    - ref: outline_top_left
-    - ref: thumb_2nd
-      affect: y
-      shift: [0.5kx, -0.5ky]
-  zones.outline_bottom_right:
-    anchor:
-    - ref: outline_top_right
-    - ref: outline_bottom_left
-      affect: y
-
   # Components
   # ==========
-
+  zones.mount_point_tl:
+    anchor:
+      - ref: matrix_pinky_top
+  zones.mount_point_tr:
+    anchor:
+      - ref: matrix_inner_top
+  zones.mount_point_br:
+    anchor:
+      - ref: thumb_main
+      - rotate: 270
+  zones.mount_point_bl:
+    anchor:
+      - ref:
+          aggregate.parts:
+          - matrix_pinky_bottom
+          - matrix_ring_bottom
+        affect: x
+      - ref: matrix_pinky_bottom
+        affect: y
+      - rotate:  180
 
 outlines:
   _switch_cutout:
@@ -155,6 +152,27 @@ outlines:
       size: [capx, capy]
       bound: false
 
+
+
+  _mount_tab:
+    - what: circle
+      radius: mount_tab_dia / 2
+      operation: stack
+    - what: rectangle
+      size: [mount_tab_dia, edgey]
+      adjust.shift: [0, -edgey / 2]
+    - what: circle
+      radius: mount_hole_dia / 2
+      operation: stack
+  
+  _mount_tab_internal:
+    - what: circle
+      radius: (mount_tab_dia + 1)/2
+    - what: rectangle
+      size: [mount_tab_dia + 1, mount_tab_dia + 1]
+      adjust.shift: [0, -(mount_tab_dia + 1 )/ 2]
+    - -_mount_tab
+
   _edge_cut:
     - what: rectangle
       where:
@@ -168,12 +186,16 @@ outlines:
   edge_cut:
     - name: _edge_cut
       fillet: 2
+    - name: _mount_tab
+      where: /mount_point_/
+      adjust.shift: [0, edgey + mount_tab_dia / 2]
+    - name: _mount_tab_internal
+      where: /mount_point_br/
+      operation: stack
+      adjust.shift: [0, edgey + mount_tab_dia / 2]
+  
 
-  key_demo:
-    - edge_cut
-    - ^_keycaps
-
-pcbs.berylline:
+pcbs.pas_chiffre:
   outlines.main:
     outline: edge_cut
   footprints:
