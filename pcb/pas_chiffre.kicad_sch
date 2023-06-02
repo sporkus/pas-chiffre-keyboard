@@ -1455,7 +1455,7 @@
     (property "Value" "SW_SPST" (at 95.123 60.452 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 95.123 63.627 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 95.123 63.627 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 95.123 63.627 0)
@@ -1464,7 +1464,7 @@
     (pin "1" (uuid 97fc83c0-9962-4eac-9264-dfa18bfb4379))
     (pin "2" (uuid 94b3d5ba-e8ed-47bc-8d63-c184d0698f95))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW9") (unit 1)
         )
@@ -1481,7 +1481,7 @@
     (property "Value" "SW_SPST" (at 107.823 102.87 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 107.823 106.045 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 107.823 106.045 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 107.823 106.045 0)
@@ -1490,7 +1490,7 @@
     (pin "1" (uuid 92fa9dc0-9f92-4444-9d90-f7d4933b2c62))
     (pin "2" (uuid 1134eaf2-68e5-47e2-869f-106e19a0a515))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW16") (unit 1)
         )
@@ -1516,7 +1516,7 @@
     (pin "1" (uuid 5701cd34-e156-4f1a-b9f5-25361a31ca2d))
     (pin "2" (uuid 011eac58-5b60-460c-906f-c2305f37eb4f))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "R3") (unit 1)
         )
@@ -1541,7 +1541,7 @@
     )
     (pin "1" (uuid 15dbf9d1-e77b-4ec1-ace6-2d7cb0fbc500))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR07") (unit 1)
         )
@@ -1566,7 +1566,7 @@
     )
     (pin "1" (uuid 43763921-6471-40f6-9da8-a75d7a175406))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR03") (unit 1)
         )
@@ -1588,7 +1588,7 @@
     (property "Value" "SW_SPST" (at 95.123 102.87 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 95.123 106.045 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 95.123 106.045 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 95.123 106.045 0)
@@ -1597,7 +1597,7 @@
     (pin "1" (uuid b82f452b-846d-4598-a56b-692cbe0cc5ae))
     (pin "2" (uuid 6f8b34d9-c64f-479f-8f59-bc63c5912ef6))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW17") (unit 1)
         )
@@ -1614,7 +1614,7 @@
     (property "Value" "SW_SPST" (at 82.423 81.661 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 82.423 84.836 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 82.423 84.836 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 82.423 84.836 0)
@@ -1623,7 +1623,7 @@
     (pin "1" (uuid eeb71141-7467-4d3f-a857-052b1bd199b2))
     (pin "2" (uuid 64e91fb5-ab12-497a-bf66-7656558ad50d))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW13") (unit 1)
         )
@@ -1648,7 +1648,7 @@
     )
     (pin "1" (uuid 4376f735-7d3a-4541-841d-775154d14059))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR06") (unit 1)
         )
@@ -1673,7 +1673,7 @@
     )
     (pin "1" (uuid faed1c2e-2f47-427f-bf5d-f90a32e2fbdf))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR010") (unit 1)
         )
@@ -1700,7 +1700,7 @@
     (pin "2" (uuid 6b1d217b-3ddb-42a0-a34b-a3822d55013b))
     (pin "3" (uuid b25385cd-d9dc-45c5-a55d-54b4fdcdcd2c))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "JP1") (unit 1)
         )
@@ -1725,7 +1725,7 @@
     )
     (pin "1" (uuid f8a5004a-975e-4982-baae-7f1b541a5506))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR02") (unit 1)
         )
@@ -1747,7 +1747,7 @@
     (property "Value" "SW_SPST" (at 57.023 39.243 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 57.023 42.418 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 57.023 42.418 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 57.023 42.418 0)
@@ -1756,7 +1756,7 @@
     (pin "1" (uuid ffb4d8f4-cbab-4d67-89d0-6c3a58ffe33f))
     (pin "2" (uuid 9aeb97db-6af9-483d-83ab-ec63b952bef1))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW1") (unit 1)
         )
@@ -1783,7 +1783,7 @@
     (pin "2" (uuid 60600c99-1c3a-4c3e-97ca-644ff046c781))
     (pin "3" (uuid 474d3d11-cdfe-4614-b528-b480815b8ea8))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "JP2") (unit 1)
         )
@@ -1800,7 +1800,7 @@
     (property "Value" "SW_SPST" (at 107.823 81.661 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 107.823 84.836 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 107.823 84.836 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 107.823 84.836 0)
@@ -1809,7 +1809,7 @@
     (pin "1" (uuid d465104c-c1b1-4315-a8f8-7b38ab2495c7))
     (pin "2" (uuid abe9bed7-6271-4827-a1b1-57de4baae9fa))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW15") (unit 1)
         )
@@ -1834,7 +1834,7 @@
     )
     (pin "1" (uuid dd4ab4cd-bd49-4a07-b212-0ab508169905))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR01") (unit 1)
         )
@@ -1860,7 +1860,7 @@
     (pin "1" (uuid d8edd41e-41ae-4fdd-8218-8dfd47ad7cf6))
     (pin "2" (uuid f9f3290a-5a32-42dd-a335-3e30ddab5ac0))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "R1") (unit 1)
         )
@@ -1885,7 +1885,7 @@
     )
     (pin "1" (uuid 907908fa-e45e-44f3-aa3a-8b5ebd57d440))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR012") (unit 1)
         )
@@ -1910,7 +1910,7 @@
     )
     (pin "1" (uuid ab615c03-e1c6-438c-a0e2-99833d7f212f))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR08") (unit 1)
         )
@@ -1935,7 +1935,7 @@
     )
     (pin "1" (uuid 0d45e184-e29b-4584-88fb-9d52a2119718))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR04") (unit 1)
         )
@@ -1965,7 +1965,7 @@
     (pin "5" (uuid 6086679f-04af-4ccb-8bfd-7dc1640e9ab8))
     (pin "6" (uuid 49b5b5d3-970a-4a1b-86ac-8ad7d1776d40))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "J1") (unit 1)
         )
@@ -2013,7 +2013,7 @@
     (pin "8" (uuid 392f07bd-c1b0-408c-8a1d-5c438c4c6683))
     (pin "9" (uuid cb37f109-624a-40bf-be3a-2963cda232c4))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "U1") (unit 1)
         )
@@ -2030,7 +2030,7 @@
     (property "Value" "SW_SPST" (at 107.823 39.243 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 107.823 42.418 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 107.823 42.418 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 107.823 42.418 0)
@@ -2039,7 +2039,7 @@
     (pin "1" (uuid ad8c187e-0d6e-46ca-9246-7daf812076d7))
     (pin "2" (uuid 3aa7db83-dbea-4681-9460-591bbdf0dc0f))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW5") (unit 1)
         )
@@ -2056,7 +2056,7 @@
     (property "Value" "SW_SPST" (at 57.023 60.452 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 57.023 63.627 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 57.023 63.627 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 57.023 63.627 0)
@@ -2065,7 +2065,7 @@
     (pin "1" (uuid b138c8ca-3b03-42ce-bdb3-215dca1274a4))
     (pin "2" (uuid 6161c761-87ba-4882-9e30-8bb1f05ad11a))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW6") (unit 1)
         )
@@ -2082,7 +2082,7 @@
     (property "Value" "SW_SPST" (at 69.723 81.661 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 69.723 84.836 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 69.723 84.836 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 69.723 84.836 0)
@@ -2091,7 +2091,7 @@
     (pin "1" (uuid 3bcc861a-3c35-41a5-8b37-e6dde646ab7e))
     (pin "2" (uuid 8c78d2c1-0d46-4cc7-98ef-2a3853d4ed1e))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW12") (unit 1)
         )
@@ -2116,7 +2116,7 @@
     )
     (pin "1" (uuid 5feee56c-3e0d-48fb-a84c-eeb1ff849a55))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR014") (unit 1)
         )
@@ -2151,7 +2151,7 @@
     (pin "5" (uuid ab938686-c4ce-4acb-8805-d847874b4056))
     (pin "6" (uuid 5879fdf9-ee75-40d8-b107-afc01e6fb2ae))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "J2") (unit 1)
         )
@@ -2168,7 +2168,7 @@
     (property "Value" "SW_SPST" (at 82.423 39.243 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 82.423 42.418 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 82.423 42.418 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 82.423 42.418 0)
@@ -2177,7 +2177,7 @@
     (pin "1" (uuid 614857de-4d29-4929-bb32-15283ae7edee))
     (pin "2" (uuid 7fdcc3ed-32ea-4fcc-bd0e-a41a97863b6c))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW3") (unit 1)
         )
@@ -2194,7 +2194,7 @@
     (property "Value" "SW_SPST" (at 57.023 81.661 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 57.023 84.836 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 57.023 84.836 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 57.023 84.836 0)
@@ -2203,7 +2203,7 @@
     (pin "1" (uuid 50a0cbf7-e7e8-4461-88ea-c7d5b8abcf49))
     (pin "2" (uuid 5ac47037-6ab9-46f0-85b7-68c9bb091ece))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW11") (unit 1)
         )
@@ -2220,7 +2220,7 @@
     (property "Value" "SW_SPST" (at 82.423 60.452 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 82.423 63.627 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 82.423 63.627 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 82.423 63.627 0)
@@ -2229,7 +2229,7 @@
     (pin "1" (uuid a951f360-0c29-4577-a579-9587a645a761))
     (pin "2" (uuid 6b3dbae1-9fb8-49cd-a4e7-41a439a3521b))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW8") (unit 1)
         )
@@ -2254,7 +2254,7 @@
     )
     (pin "1" (uuid 7064798a-2798-4e7e-8f6d-08b583dc52e4))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR013") (unit 1)
         )
@@ -2285,7 +2285,7 @@
     (pin "1" (uuid ed5e11e1-405b-47f9-81f7-96bf759f70c7))
     (pin "2" (uuid 44f323e6-3502-4715-aa57-0fc8eaae186e))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "C1") (unit 1)
         )
@@ -2311,7 +2311,7 @@
     (pin "1" (uuid 1460f173-b0a3-47f4-9a6b-6908fb738dd3))
     (pin "2" (uuid 89c15816-d873-453d-bada-2e009a113b28))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "R2") (unit 1)
         )
@@ -2328,7 +2328,7 @@
     (property "Value" "SW_SPST" (at 95.123 81.661 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 95.123 84.836 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 95.123 84.836 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 95.123 84.836 0)
@@ -2337,7 +2337,7 @@
     (pin "1" (uuid fdf61f1e-b2b6-47fe-ac51-2e87b136b579))
     (pin "2" (uuid 3155bdfd-6232-4c9a-8395-35d756a0e15c))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW14") (unit 1)
         )
@@ -2354,7 +2354,7 @@
     (property "Value" "SW_SPST" (at 69.723 39.243 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 69.723 42.418 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 69.723 42.418 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 69.723 42.418 0)
@@ -2363,7 +2363,7 @@
     (pin "1" (uuid 408374b3-ced9-4174-ba04-1daa4e427367))
     (pin "2" (uuid 6c6da9b5-8a87-4aee-a71e-e14c42f1c8f2))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW2") (unit 1)
         )
@@ -2380,7 +2380,7 @@
     (property "Value" "SW_SPST" (at 69.723 60.452 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 69.723 63.627 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 69.723 63.627 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 69.723 63.627 0)
@@ -2389,7 +2389,7 @@
     (pin "1" (uuid 0fbac044-5e3d-4fde-b266-aba3c1818626))
     (pin "2" (uuid a5c5bfff-39c2-43c1-9527-6f1ac5f9cf4a))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW7") (unit 1)
         )
@@ -2414,7 +2414,7 @@
     )
     (pin "1" (uuid 0a9bb64e-b8fe-42fa-b275-0435e59a2614))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR011") (unit 1)
         )
@@ -2431,7 +2431,7 @@
     (property "Value" "SW_SPST" (at 107.823 60.452 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 107.823 63.627 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 107.823 63.627 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 107.823 63.627 0)
@@ -2440,7 +2440,7 @@
     (pin "1" (uuid 1c5f4c7f-2750-478e-b6e6-95df60dfec61))
     (pin "2" (uuid 2aaf003f-85c1-4a2d-8b0e-4b83d1b6602e))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW10") (unit 1)
         )
@@ -2465,7 +2465,7 @@
     )
     (pin "1" (uuid 44630674-d37c-411b-8074-dee58671037a))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "#PWR09") (unit 1)
         )
@@ -2482,7 +2482,7 @@
     (property "Value" "SW_SPST" (at 95.123 39.243 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "keyswitches:SW_MX_reversible_minimal" (at 95.123 42.418 0)
+    (property "Footprint" "keyswitches:SW_MX_reversible" (at 95.123 42.418 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 95.123 42.418 0)
@@ -2491,7 +2491,7 @@
     (pin "1" (uuid 6ac0d16e-ecb0-4f73-bb24-b13f2b3ca79c))
     (pin "2" (uuid e34fac24-c4b9-4736-8492-bda85ab2e09d))
     (instances
-      (project "chiffre_no_mcu"
+      (project "pas_chiffre"
         (path "/48dcca0f-b93f-4cdc-9a65-180bf2216bd9"
           (reference "SW4") (unit 1)
         )
