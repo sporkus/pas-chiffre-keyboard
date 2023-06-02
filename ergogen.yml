@@ -1,0 +1,188 @@
+meta:
+  engine: 4.0.0
+  name: pas_chiffre
+  version: 0.1
+  author: sporkus
+  url: https://github.com/sporkus/pas_chiffre
+
+presets:
+  # These presets provide different layout options
+  # Select a preset in the `units` section below
+  # Note: The appropriate switch footprint will still need to be set in the `pcb` section
+  choc_spaced:
+    capx: 17        # Key cap size horizontal
+    capy: 16        # Key cap size vertical
+    kx: cx + 0.5    # Key spacing horizontal
+    ky: cy + 0.5    # Key spacing vertical
+    pinky_splay: 5  # Degrees of splay between pinky and ring columns
+    pinky_adj: -3   # Adjustment to compensate for splay spacing
+    ring_splay: 3
+    ring_adj: -8
+    middle_splay: 0
+    middle_adj: 0
+    thumb_offsetx: 0.25kx
+
+  mx_spaced:
+    capx: 18.1
+    capy: capx
+    kx: 19.05
+    ky: kx
+    edge_cut_padding: 1
+    pinky_splay: 0
+    pinky_adj: 0
+    ring_splay: 0
+    ring_adj: 0
+    middle_splay: 0
+    middle_adj: 0
+    thumb_2nd_unit: 1.25
+    thumb_main_unit: 2
+
+units:
+  $extends: presets.mx_spaced
+  edgex: capx/2 + edge_cut_padding
+  edgey: capy/2 + edge_cut_padding
+
+  # Defaults/Constants
+  # ====================
+  $default_height: 0  # Points invisible by default unless height/width explicitly set
+  $default_width: 0
+
+points:
+  # Keys/Switches
+  # =============
+  zones.matrix:
+    anchor.shift: [150, -180]
+    rotate: pinky_splay + ring_splay + middle_splay
+    key:
+      width: capx
+      height: capy
+      spread: kx
+      padding: ky
+      bind: [edgex, edgey]
+    rows:
+      bottom:
+      home:
+      top:
+    columns:
+      pinky:
+      ring.key:
+        stagger: 1/4ky
+        splay: -pinky_splay
+        origin: [0, pinky_adj]
+      middle.key:
+        stagger: 0.25ky
+        splay: -ring_splay
+        origin: [0, ring_adj]
+      index.key:
+        stagger: -0.25ky
+        splay: -middle_splay
+        origin: [0, middle_adj]
+      inner:
+
+  zones.thumb_2nd:
+    key:
+      $extends: points.zones.matrix.key
+      width: thumb_2nd_unit * capx
+      bind: [edgey + 10, thumb_2nd_unit * capx / 2 + edge_cut_padding, edgey, thumb_2nd_unit * capx / 2 + edge_cut_padding]
+
+    anchor:
+      - ref: matrix_pinky_bottom
+        affect: y
+        shift: [0, -ky]
+      - ref: matrix_middle_bottom
+        affect: x
+      - shift: [-(thumb_2nd_unit-1) / 2 * kx, 0]
+  zones.thumb_main:
+    key:
+      $extends: points.zones.matrix.key
+      width: thumb_main_unit * capx
+      bind: [edgey+10, thumb_main_unit * capx / 2 + edge_cut_padding, edgey, thumb_main_unit * capx / 2 + edge_cut_padding]
+
+    anchor:
+      - ref: thumb_2nd
+        affect: y
+      - aggregate.parts:
+        - matrix_index_bottom
+        - matrix_inner_bottom
+        affect: x
+
+
+  # Outline Extents
+  # ===============
+  zones.outline_top_left:
+    anchor:
+    - ref: matrix_middle_top
+      shift: [0.5kx, 0.5ky]
+      affect: y
+    - ref: matrix_pinky_top
+      affect: x
+      shift: [-0.5kx, 0.5ky]
+  zones.outline_top_right:
+    anchor:
+    - ref: outline_top_left
+    - ref: matrix_inner_top
+      affect: x
+      shift: [0.5kx, -0.5ky]
+  zones.outline_bottom_left:
+    anchor:
+    - ref: outline_top_left
+    - ref: thumb_2nd
+      affect: y
+      shift: [0.5kx, -0.5ky]
+  zones.outline_bottom_right:
+    anchor:
+    - ref: outline_top_right
+    - ref: outline_bottom_left
+      affect: y
+
+  # Components
+  # ==========
+
+
+outlines:
+  _switch_cutout:
+    - what: rectangle
+      where:
+        - /matrix_.*/
+        - /thumb_.*/
+      size: [14, 14]
+      bound: false
+  _keycaps:
+    - what: rectangle
+      where:
+        - /matrix_.*/
+        - /thumb_.*/
+      size: [capx, capy]
+      bound: false
+
+  _edge_cut:
+    - what: rectangle
+      where:
+        - /matrix_/
+      bound: true
+    - what: rectangle
+      where: /thumb/
+      size: [1, 1]
+      bound: true
+
+  edge_cut:
+    - name: _edge_cut
+      fillet: 2
+
+  key_demo:
+    - edge_cut
+    - ^_keycaps
+
+pcbs.berylline:
+  outlines.main:
+    outline: edge_cut
+  footprints:
+    - what: mx
+      where:
+        - /matrix_.*/
+        - /thumb_.*/
+      params:
+        from: GND
+        to: "{{name}}"
+        reverse: true
+        keycaps: true
