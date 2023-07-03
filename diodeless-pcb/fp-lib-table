@@ -1,0 +1,8 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "keyswitches")(type "KiCad")(uri "${KIPRJMOD}/library/keyswitches")(options "")(descr ""))
+  (lib (name "vik")(type "KiCad")(uri "${KIPRJMOD}/library/vik.pretty")(options "")(descr ""))
+  (lib (name "mcu")(type "KiCad")(uri "${KIPRJMOD}/library/mcu.pretty")(options "")(descr ""))
+  (lib (name "hand_solder")(type "KiCad")(uri "${KIPRJMOD}/library/hand_solder.pretty")(options "")(descr ""))
+  (lib (name "switch")(type "KiCad")(uri "${KIPRJMOD}/library/switch.pretty")(options "")(descr ""))
+)
